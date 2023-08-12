@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>攝影作品</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <style>
-    body {
-      background-image: url('背景圖片的URL');
-      background-size: cover;
-      margin: 0;
-    }   
-    
+
     .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
+      justify-content: left;
+      align-items:normal;
+      padding: 5px;
       background-color: #f1f1f1;
     }
 
     #header {
       color: #333;
       display: flex;
-      align-items: center;
+      align-items:baseline;
       font-family: "微軟正黑體", sans-serif;
     }
     
@@ -48,12 +41,14 @@
       list-style-type: none;
       display: flex;
       font-family: "微軟正黑體", sans-serif;
-      padding: 0;
-      transform: translateY(-100%);
+      padding:0px;
+      transform: translateY(-50%);
+      font-size: 15px;
+      margin: 10px; 
     }
     
     .menu li {
-      margin-right: 10px;
+      margin-right: -20px;
     }
     
     .menu li a {
@@ -62,6 +57,7 @@
       padding: 5px 10px;
       background-color: #ddd;
       border-radius: 5px;
+      margin: 20px; 
     }
     
     .menu li a:hover {
@@ -124,13 +120,13 @@
     }
     .toggle-button {
      position: absolute;
-     top: 10px;
-     right: 10px;
+     top: 20px;
+     right: 20px;
      padding: 5px 10px;
-     background-color: rgba(114, 114, 114, 0.623);
-     color: white;
+     background-color: rgba(255, 255, 255, 0.89);
+     color: rgb(0, 0, 0);
      font-size: 12px;
-     cursor: pointer;
+ 
     }
     .swiper-container .swiper-pagination {
   position: relative;
@@ -232,7 +228,7 @@
             <img src="https://i.imgur.com/2HWvCv5.jpg">
           </div>
           <div class="grid-image-container" onclick="showImage(1)">
-             <img src="https://i.imgur.com/GXI8H4D.jpg">
+            <img src="https://i.imgur.com/oyPj4Pz.jpg">
           </div>
         </div>
 
@@ -306,7 +302,7 @@
         <div class="slide-caption">動物照</div>
       </div>
       <div class="swiper-slide">
-        <img src="https://i.imgur.com/GKkZrmR.jp">
+        <img src="https://i.imgur.com/DwJnlb1.jpg">
         <div class="slide-caption">動物照</div>
       </div>
       
@@ -347,7 +343,7 @@
       <div class="slide-caption">產品照</div>
     </div>
     <div class="swiper-slide">
-      <img src="https://i.imgur.com/GXI8H4D.jpg">
+      <img src="https://i.imgur.com/nvUZorA.jpg">
       <div class="slide-caption">產品照</div>
     </div>
     <!-- 新增更多圖片... -->
