@@ -97,60 +97,13 @@ body {
       text-align: center;
     }
 
-    .text-box {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      padding: 10px;
-      width: calc(100% - 20px);
-    }
 
-    .vertical-gallery {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     grid-gap: 10px;
-     align-items: center; /* 將元素內容水平置中 */
-    }
 
-    .grid-image-container img {
-     width: 100%; /* 調整圖片寬度 */
-     height: auto; /* 讓高度自動調整以保持比例 */
-    }
-    .toggle-button {
-     position: absolute;
-     top: 20px;
-     right: 20px;
-     padding: 5px 10px;
-     background-color: rgba(255, 255, 255, 0.918);
-     color: rgb(0, 0, 0);
-     font-size: 12px;
- 
-    }
     .swiper-container .swiper-pagination {
   position: relative;
   top: 10px; /* 向上移動的像素值，根據需要調整 */
 }
 
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  margin: 0 6px; /* 調整此值以控制提示點之間的間距 */
-  background-color: rgba(107, 76, 76, 0.452);
-  border-radius: 40%;
-}
-.image-description {
-  text-align:center;
-  padding: 5px;
-  width: 50px;
-  border-radius: 15%;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background-color: rgba(72, 100, 110, 0.705);
-  color:rgb(236, 236, 236);
-  font-size: 15px;
-}
   </style>
 </head>
 <body>
@@ -169,93 +122,10 @@ body {
    
   </div>
   
- <!-- 直排模式 -->
- <div class="image-description">風景照</div>
-<div class="vertical-gallery">
-    <div class="grid-image-container" onclick="showImage(0)">
-      <img src="https://i.imgur.com/CoFHQWi.jpg">
-    </div>
-    <div class="grid-image-container" onclick="showImage(1)">
-      <img src="https://i.imgur.com/NQRFCAC.jpg">
-    </div>
-    <div class="grid-image-container" onclick="showImage(2)">
-      <img src="https://i.imgur.com/1rW0ryx.jpg">
-    </div>
-    <div class="grid-image-container" onclick="showImage(3)">
-        <img src="https://i.imgur.com/VoW1zCm.jpg">
-      </div>
-    <div class="grid-image-container" onclick="showImage(4)">
-        <img src="https://i.imgur.com/Rg7kdvC.jpg">
-      </div>
-    <!-- 添加更多照片 -->
-  </div>
-  <div class="image-description" id="image-description2">動物照</div>
-  <div class="vertical-gallery" id="vertical-gallery2">
-      <div class="grid-image-container" onclick="showImage(0)">
-        <img src="https://i.imgur.com/eqAKDWU.jpg">
-      </div>
-      <div class="grid-image-container" onclick="showImage(1)">
-        <img src="https://i.imgur.com/YtbPXfb.jpg">
-      </div>
-      <div class="grid-image-container" onclick="showImage(2)">
-        <img src="https://i.imgur.com/IEy4fVQ.jpg">
-      </div>
-      <div class="grid-image-container" onclick="showImage(3)">
-        <img src="https://i.imgur.com/GKkZrmR.jpg">
-      </div>
-    </div>
 
-    <div class="image-description" id="image-description3">人像照</div>
-    <div class="vertical-gallery" id="vertical-gallery3">
-        <div class="grid-image-container" onclick="showImage(0)">
-          <img src="https://i.imgur.com/0eICErf.jpg">
-        </div>
-        <div class="grid-image-container" onclick="showImage(1)">
-          <img src="https://i.imgur.com/EQqGY2B.jpg">
-        </div>
-        <div class="grid-image-container" onclick="showImage(2)">
-          <img src="https://i.imgur.com/IEy4fVQ.jpg">
-        </div>
-        <div class="grid-image-container" onclick="showImage(3)">
-          <img src="https://i.imgur.com/bCJAL1M.png">
-        </div>
-      </div>
-
-      <div class="image-description" id="image-description4">產品照</div>
-      <div class="vertical-gallery" id="vertical-gallery4">
-          <div class="grid-image-container" onclick="showImage(0)">
-            <img src="https://i.imgur.com/2HWvCv5.jpg">
-          </div>
-          <div class="grid-image-container" onclick="showImage(1)">
-            <img src="https://i.imgur.com/oyPj4Pz.jpg">
-          </div>
-        </div>
-
-        <div class="image-description" id="image-description5">特寫照</div>
-        <div class="vertical-gallery" id="vertical-gallery5">
-            <div class="grid-image-container" onclick="showImage(0)">
-              <img src="https://i.imgur.com/Dmn8Ucm.jpg">
-            </div>
-            <div class="grid-image-container" onclick="showImage(1)">
-              <img src="https://i.imgur.com/5IlGztA.jpg">
-            </div>
-            <div class="grid-image-container" onclick="showImage(2)">
-              <img src="https://i.imgur.com/3B1mqmK.jpg">
-            </div>
-            <div class="grid-image-container" onclick="showImage(3)">
-              <img src="https://i.imgur.com/qXlfR5t.jpg">
-            </div>
-            <div class="grid-image-container" onclick="showImage(4)">
-              <img src="https://i.imgur.com/EttrqTF.jpg">
-            </div>
-          </div>
-
-  <!-- 切換回輪播模式的按鈕 -->
-  <button class="toggle-button" onclick="switchToSwiperMode()">輪播模式</button>
   
 <!-- 加入 Swiper 相關的 HTML 結構 -->
 <div class="swiper-container">
-    <button class="toggle-button" onclick="toggleLayout()">排列模式</button>
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img src="https://i.imgur.com/CoFHQWi.jpg">
@@ -388,57 +258,6 @@ body {
         clickable: true,
       },
     });
-
-    var isVerticalLayout = false; // 預設為輪播模式
-
-function toggleLayout() {
-  isVerticalLayout = !isVerticalLayout;
-  updateLayout();
-}
-
-function updateLayout() {
-  if (isVerticalLayout) {
-    // 切換為直排模式
-    document.querySelector('.swiper-container').style.display = 'none';
-    document.querySelector('#swiper-container2').style.display = 'none';
-    document.querySelector('#swiper-container3').style.display = 'none';
-    document.querySelector('#swiper-container4').style.display = 'none';
-    document.querySelector('#swiper-container5').style.display = 'none';
-    document.querySelector('.vertical-gallery').style.display = 'grid';
-    document.querySelector('#vertical-gallery2').style.display = 'grid'
-    document.querySelector('#vertical-gallery3').style.display = 'grid'
-    document.querySelector('#vertical-gallery4').style.display = 'grid'
-    document.querySelector('#vertical-gallery5').style.display = 'grid'
-    document.querySelector('.image-description').style.display = 'block';
-    document.querySelector('#image-description2').style.display = 'block';
-    document.querySelector('#image-description3').style.display = 'block';
-    document.querySelector('#image-description4').style.display = 'block';
-    document.querySelector('#image-description5').style.display = 'block';  // 顯示文字
-  } else {
-    // 切換為輪播模式
-    document.querySelector('.swiper-container').style.display = 'block';
-    document.querySelector('#swiper-container2').style.display = 'block';
-    document.querySelector('#swiper-container3').style.display = 'block';
-    document.querySelector('#swiper-container4').style.display = 'block';
-    document.querySelector('#swiper-container5').style.display = 'block';
-    document.querySelector('.vertical-gallery').style.display = 'none';
-    document.querySelector('#vertical-gallery2').style.display = 'none';
-    document.querySelector('#vertical-gallery3').style.display = 'none';
-    document.querySelector('#vertical-gallery4').style.display = 'none';
-    document.querySelector('#vertical-gallery5').style.display = 'none';
-    document.querySelector('.image-description').style.display = 'none';
-    document.querySelector('#image-description2').style.display = 'none';
-    document.querySelector('#image-description3').style.display = 'none';
-    document.querySelector('#image-description4').style.display = 'none';
-    document.querySelector('#image-description5').style.display = 'none'; // 隱藏文字
-  }
-}
-function switchToSwiperMode() {
-  isVerticalLayout = false; // 切換回輪播模式
-  updateLayout();
-}
-// 初始化
-updateLayout();
 
   </script>
 </body>
